@@ -1,4 +1,4 @@
-import __ignoredDependencies from './../common/ignored-dependencies.mjs';
+import customIgnoredDependencies from './../common/ignored-dependencies.mjs';
 
 /**
  * Create `dependency-checks` rule
@@ -17,7 +17,7 @@ export async function createDependencyChecksRule(ignoredDependencies) {
             '{projectRoot}/vite.config.{js,ts,mjs,mts}',
           ],
           ignoredDependencies: [
-            ...__ignoredDependencies,
+            ...customIgnoredDependencies,
             ...ignoredDependencies,
           ],
         },
@@ -29,4 +29,4 @@ export async function createDependencyChecksRule(ignoredDependencies) {
   };
 }
 
-export default createDependencyChecksRule(__ignoredDependencies);
+export default createDependencyChecksRule(customIgnoredDependencies);
