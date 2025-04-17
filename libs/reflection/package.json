@@ -1,6 +1,6 @@
 {
   "name": "@bmod/reflection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -20,6 +20,9 @@
   ],
   "nx": {
     "sourceRoot": "libs/reflection/src",
+    "implicitDependencies": [
+      "@bmod/types"
+    ],
     "targets": {
       "build": {
         "executor": "@nx/js:swc",
@@ -40,7 +43,6 @@
     "reflect-metadata": "^0.2.2"
   },
   "dependencies": {
-    "@bmod/types": "workspace:^",
     "@swc/helpers": "~0.5.11"
   }
 }

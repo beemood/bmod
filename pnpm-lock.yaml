@@ -115,9 +115,6 @@ importers:
 
   libs/reflection:
     dependencies:
-      '@bmod/types':
-        specifier: workspace:^
-        version: link:../types
       '@swc/helpers':
         specifier: ~0.5.11
         version: 0.5.17
