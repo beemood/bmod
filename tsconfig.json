@@ -8,6 +8,15 @@
     },
     {
       "path": "./apps/bmod"
+    },
+    {
+      "path": "./libs/gen"
+    },
+    {
+      "path": "./libs/reflection"
+    },
+    {
+      "path": "./libs/types"
     }
   ]
 }

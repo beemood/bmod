@@ -1,6 +1,7 @@
 {
   "export all": {
     "prefix": "export all",
-    "body": ""
+    "body": "// @index(['./**/*.ts', '!./**/*.spec.ts'], f => `export * from '${f.path}.js'`)",
+    "scope": "typescript"
   }
 }
