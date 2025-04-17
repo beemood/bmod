@@ -38,5 +38,13 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     }
+  },
+  "generators": {
+    "@nx/js:library": {
+      "bundler": "swc",
+      "linter": "eslint",
+      "unitTestRunner": "vitest",
+      "publishable": true
+    }
   }
 }
