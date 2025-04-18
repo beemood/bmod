@@ -1,5 +1,5 @@
 {
-  "name": "@bmod/gen",
+  "name": "@bmod/set",
   "version": "0.0.7",
   "type": "module",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
     "!**/*.tsbuildinfo"
   ],
   "nx": {
-    "sourceRoot": "libs/gen/src",
+    "sourceRoot": "libs/set/src",
     "targets": {
       "build": {
         "executor": "@nx/js:swc",
@@ -27,9 +27,9 @@
           "{options.outputPath}"
         ],
         "options": {
-          "outputPath": "libs/gen/dist",
-          "main": "libs/gen/src/index.ts",
-          "tsConfig": "libs/gen/tsconfig.lib.json",
+          "outputPath": "libs/set/dist",
+          "main": "libs/set/src/index.ts",
+          "tsConfig": "libs/set/tsconfig.lib.json",
           "skipTypeCheck": true,
           "stripLeadingPaths": true
         }

@@ -1,5 +1,5 @@
 {
-  "name": "@bmod/gen",
+  "name": "@bmod/errors",
   "version": "0.0.7",
   "type": "module",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
     "!**/*.tsbuildinfo"
   ],
   "nx": {
-    "sourceRoot": "libs/gen/src",
+    "sourceRoot": "libs/errors/src",
     "targets": {
       "build": {
         "executor": "@nx/js:swc",
@@ -27,9 +27,9 @@
           "{options.outputPath}"
         ],
         "options": {
-          "outputPath": "libs/gen/dist",
-          "main": "libs/gen/src/index.ts",
-          "tsConfig": "libs/gen/tsconfig.lib.json",
+          "outputPath": "libs/errors/dist",
+          "main": "libs/errors/src/index.ts",
+          "tsConfig": "libs/errors/tsconfig.lib.json",
           "skipTypeCheck": true,
           "stripLeadingPaths": true
         }

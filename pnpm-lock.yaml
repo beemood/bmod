@@ -107,6 +107,12 @@ importers:
 
   apps/bmod-e2e: {}
 
+  libs/errors:
+    dependencies:
+      '@swc/helpers':
+        specifier: ~0.5.11
+        version: 0.5.17
+
   libs/gen:
     dependencies:
       '@swc/helpers':
@@ -115,12 +121,24 @@ importers:
 
   libs/reflection:
     dependencies:
+      '@bmod/errors':
+        specifier: workspace:*
+        version: link:../errors
+      '@bmod/types':
+        specifier: workspace:*
+        version: link:../types
       '@swc/helpers':
         specifier: ~0.5.11
         version: 0.5.17
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
+
+  libs/set:
+    dependencies:
+      '@swc/helpers':
+        specifier: ~0.5.11
+        version: 0.5.17
 
   libs/types:
     dependencies:

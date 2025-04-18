@@ -8,7 +8,7 @@
     "strictPropertyInitialization": false,
     "importHelpers": true,
     "isolatedModules": true,
-    "lib": ["es2022"],
+    "lib": ["ESNext"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "noEmitOnError": true,
@@ -18,7 +18,7 @@
     "noUnusedLocals": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2022",
+    "target": "ESNext",
     "customConditions": ["development"]
   }
 }

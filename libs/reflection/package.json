@@ -1,6 +1,6 @@
 {
   "name": "@bmod/reflection",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -18,6 +18,9 @@
     "dist",
     "!**/*.tsbuildinfo"
   ],
+  "scripts": {
+    "postpublish": "pnpm add --workspace @bmod/types @bmod/errors"
+  },
   "nx": {
     "sourceRoot": "libs/reflection/src",
     "implicitDependencies": [
@@ -43,6 +46,8 @@
     "reflect-metadata": "^0.2.2"
   },
   "dependencies": {
+    "@bmod/errors": "workspace:*",
+    "@bmod/types": "workspace:*",
     "@swc/helpers": "~0.5.11"
   }
 }
