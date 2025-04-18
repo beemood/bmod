@@ -23,6 +23,9 @@
     },
     {
       "path": "./libs/errors"
+    },
+    {
+      "path": "./libs/ajv"
     }
   ]
 }

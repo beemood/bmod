@@ -107,6 +107,21 @@ importers:
 
   apps/bmod-e2e: {}
 
+  libs/ajv:
+    dependencies:
+      '@bmod/reflection':
+        specifier: workspace:^
+        version: link:../reflection
+      '@bmod/types':
+        specifier: ^0.0.9
+        version: 0.0.9
+      '@swc/helpers':
+        specifier: ~0.5.11
+        version: 0.5.17
+      ajv:
+        specifier: ^8.17.1
+        version: 8.17.1
+
   libs/errors:
     dependencies:
       '@swc/helpers':
@@ -758,6 +773,9 @@ packages:
   '@bcoe/v8-coverage@1.0.2':
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
+
+  '@bmod/types@0.0.9':
+    resolution: {integrity: sha512-g8CSLy/IrA53SvplSG5MSgeiSSplwgOPv7R23AJwt4njkZ2go1efQq5Xpo+PCXvbIj630aJoBHMwvgJt283kUQ==}
 
   '@cypress/request@3.0.8':
     resolution: {integrity: sha512-h0NFgh1mJmm1nr4jCwkGHwKneVYKghUyWe6TMNrk0B9zsjAJxpg8C4/+BAcmLgCPa1vj1V8rNUaILl+zYRUWBQ==}
@@ -5361,6 +5379,10 @@ snapshots:
   '@bcoe/v8-coverage@0.2.3': {}
 
   '@bcoe/v8-coverage@1.0.2': {}
+
+  '@bmod/types@0.0.9':
+    dependencies:
+      '@swc/helpers': 0.5.17
 
   '@cypress/request@3.0.8':
     dependencies:

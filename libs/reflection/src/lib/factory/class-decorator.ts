@@ -23,7 +23,7 @@ export type ClassDecoratorMetadata<Args extends Array<Any>> = {
   /**
    * Provided metadata through the decorator
    */
-  classMetadata: Args;
+  classMetaData: Args;
 };
 
 /**
@@ -76,7 +76,7 @@ export function createClassDecorator<Args extends Array<Any>>(
         key,
         {
           classType: target as unknown as ClassType,
-          classMetadata: args,
+          classMetaData: args,
         } as ClassDecoratorMetadata<Args>,
         target.prototype
       );

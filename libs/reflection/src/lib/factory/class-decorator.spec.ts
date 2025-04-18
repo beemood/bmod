@@ -15,7 +15,7 @@ describe('createClassDecorator', () => {
 
     expect(getMetaData(Some.prototype)).toEqual({
       classType: Some,
-      classMetadata: [{ type: 'string' }, { type: 'number' }],
+      classMetaData: [{ type: 'string' }, { type: 'number' }],
     });
   });
 });

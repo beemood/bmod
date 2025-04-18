@@ -1,5 +1,5 @@
 {
-  "name": "@bmod/types",
+  "name": "@bmod/ajv",
   "version": "0.0.9",
   "type": "module",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
     "!**/*.tsbuildinfo"
   ],
   "nx": {
-    "sourceRoot": "libs/types/src",
+    "sourceRoot": "libs/ajv/src",
     "targets": {
       "build": {
         "executor": "@nx/js:swc",
@@ -27,16 +27,21 @@
           "{options.outputPath}"
         ],
         "options": {
-          "outputPath": "libs/types/dist",
-          "main": "libs/types/src/index.ts",
-          "tsConfig": "libs/types/tsconfig.lib.json",
+          "outputPath": "libs/ajv/dist",
+          "main": "libs/ajv/src/index.ts",
+          "tsConfig": "libs/ajv/tsconfig.lib.json",
           "skipTypeCheck": true,
           "stripLeadingPaths": true
         }
       }
     }
   },
+  "peerDependencies": {
+    "@bmod/reflection": "workspace:^"
+  },
   "dependencies": {
-    "@swc/helpers": "~0.5.11"
+    "@bmod/types": "^0.0.9",
+    "@swc/helpers": "~0.5.11",
+    "ajv": "^8.17.1"
   }
 }
